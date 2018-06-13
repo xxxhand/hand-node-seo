@@ -1,1 +1,3 @@
-console.log('Hello world');
+module.export = () => {
+    return 'Hello world';
+}

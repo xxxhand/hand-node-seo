@@ -1,6 +1,6 @@
 {
   "name": "hand-node-seo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "seo package demo for",
   "main": "index.js",
   "scripts": {
