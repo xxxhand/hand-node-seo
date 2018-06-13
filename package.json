@@ -1,0 +1,22 @@
+{
+  "name": "hand-node-seo",
+  "version": "1.0.0",
+  "description": "seo package demo for",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxhand/hand-node-seo.git"
+  },
+  "keywords": [
+    "seo"
+  ],
+  "author": "xxxhand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxxhand/hand-node-seo/issues"
+  },
+  "homepage": "https://github.com/xxxhand/hand-node-seo#readme"
+}
