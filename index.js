@@ -1,3 +1,2 @@
-module.export = () => {
-    return 'Hello world';
-}
+exports.LoaderClass = require('./lib/Loader');
+exports.RuleEngineClass = require('./lib/RuleEngine');
