@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/xxxhand/hand-node-seo#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2"
+    
   }
 }
