@@ -1,2 +1,2 @@
 exports.LoaderClass = require('./lib/Loader');
-exports.RuleEngineClass = require('./lib/RuleEngine');
+exports.RuleEngineClass = require('./lib/BasicRule');
