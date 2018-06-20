@@ -12,6 +12,7 @@ input:
 	const ruleEngine = new RuleEngineClass(htmlStr);
 	
   you don't need any callback function if you create instance this way, you can use the methods directly, for example:
+
 	const ruleEngine = new RuleEngineClass(htmlStr)
 	    .addCustomRule(customRuleB)
 		.runH1TagDetect()
@@ -37,29 +38,29 @@ input:
 	
 As requirements, there are methods with the instance.
 
-1. Detect if any <img /> tag without alt attribute
-2. Detect if any <a /> tag without rel attribute
+1. Detect if any "img" tag without alt attribute
+2. Detect if any "a" tag without rel attribute
 
 	just use the 'runTagWithoutAttributeDetect(tagName, attrName)'
 	for example: runTagWithoutAttributeDetect('img', 'alt')
 
-3. In <head> tag
-	i. Detect if header doesn’t have <title> tag
+3. In "head" tag
+	i. Detect if header doesn’t have "title" tag
 	
 		runTitleTagInHeadDetect()
 		
-	ii. Detect if header doesn’t have <meta name=“descriptions” ... /> tag
-	iii. Detect if header doesn’t have <meta name=“keywords” ... /> tag	
+	ii. Detect if header doesn’t have "meta name=“descriptions” ... " tag
+	iii. Detect if header doesn’t have "meta name=“keywords” ... " tag	
 		
 		runMetaNameDetect()
 		
-	This method would detect attribute name with <meta> "description" and "keywords" as default, if you want to detect more names,
+	This method would detect attribute name with "meta" "description" and "keywords" as default, if you want to detect more names,
 	just use addDetectMetaName(name) method before this method. for example:
 	
 		ruleEngine
 			.addDetectMetaName('robots')
 			.runMetaNameDetect()
-4. Detect if there’re more than 15 <strong> tag in HTML (15 is a value should be configurable by user)
+4. Detect if there’re more than 15 "strong" tag in HTML (15 is a value should be configurable by user)
 	
 	runStrongTagDetect(maxLen)
    
