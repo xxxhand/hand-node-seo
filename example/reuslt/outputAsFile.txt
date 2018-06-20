@@ -1,0 +1,12 @@
+There are 2 <h1> founded
+There are 2 <strong> in html
+meta name description searching
+Meta name description founded
+meta name keywords searching
+Meta name keywords founded
+meta name hands searching
+Running customA
+Custom A detect <h2>, 1 founded
+Running customB
+Custom A detect <h3>, 1 founded
+There are 1 <img> founded and 1 without alt attribute
