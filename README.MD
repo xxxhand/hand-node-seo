@@ -45,28 +45,30 @@ As requirements, there are methods with the instance.
 	for example: runTagWithoutAttributeDetect('img', 'alt')
 
 3. In "head" tag
-	i. Detect if header doesn’t have "title" tag
+
+	a. Detect if header doesn’t have "title" tag.
 	
 		runTitleTagInHeadDetect()
 		
-	ii. Detect if header doesn’t have "meta name=“descriptions” ... " tag
-	iii. Detect if header doesn’t have "meta name=“keywords” ... " tag	
+	b. Detect if header doesn’t have "meta name=“descriptions” ... " tag.
+	c. Detect if header doesn’t have "meta name=“keywords” ... " tag.
 		
 		runMetaNameDetect()
 		
-	This method would detect attribute name with "meta" "description" and "keywords" as default, if you want to detect more names,
+	This method would detect attribute name with "meta" tag, the "description" and "keywords" as default, if you want to detect more names,
 	just use addDetectMetaName(name) method before this method. for example:
 	
 		ruleEngine
 			.addDetectMetaName('robots')
 			.runMetaNameDetect()
+
 4. Detect if there’re more than 15 "strong" tag in HTML (15 is a value should be configurable by user)
 	
 	runStrongTagDetect(maxLen)
    
    default maxLen is 15
  
-5. Detect if a HTML have more than one <H1> tag.
+5. Detect if a HTML have more than one "H1" tag.
 	
 	runH1TagDetect()
 
@@ -103,9 +105,14 @@ And then, you can use method runCustomDetect() for running custom rules
 
 Output can be:
 
-1. A file, no returns, just save as a file
+1. A file, no returns, just save as a file.
+
 	toFile(filePath)
 	
-2. A writeStream, return a node writeStream object
+2. A writeStream, return a node writeStream object.
+
 	toFileStream(filePath, encoding)
-3. console, no returns, just output to console
+
+3. console, no returns, just output to console.
+
+    toConsole()
